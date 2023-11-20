@@ -1,0 +1,36 @@
+How to use:
+
+1、Create a material named "gem". Select the "gem" material in assets, and choose the Unlit/gem in the "Shader" option.
+
+2、Assign the gem_common.cube(Gem/Textures/gem_common) to the RefractCube parameter.
+
+3、Assign the hdr_EvnLighting_wb.cube(Gem/Textures) to the Evn lighting paramter.
+
+4、Assign the hdr_EvnCubemap.cube or hdr_EvnLighting_wb.cueb(Gem/Textures) to the Env Texture paramter.(you can use your environment cubemap assign to it.)
+
+5、Assign the dispersion_0.cube(Gem/Textures) to the Dispersion Tex paramter.
+
+6、Assign "gem" material to your gem model.
+
+Other paramters:
+1、Gem Color: the color of the gem.(I advise you to build a refact cubemap with color in maya or 3dmax. It would have a good effect than changing the Gem Color.)
+
+2、_Emission: the emission color of the gem.(notice:gem can not give out light in truth.)
+
+3、Specular Power&Dispersion Power
+x:specular exponent
+y:the brightness of supecular
+z:the power of dispersion(0.25 is good)
+
+4、Reflect Strength: 0.1~0.2 is good.
+
+How to add cross flare effect:
+See Gem/CrossFlare/read me.txt
+
+At last:forgive my poor english.
+
+Gem2.0 new feature:
+1、Remove 'Env Texture'、'Reflect Strength'and 'EnvLighting' options.(There is no need now)
+2、Support Reflection Probe.
+3、Using new method to calculate dispersion.It is more realistic than before.
+4、Support gamma space. But there is also a little different between linear space and gamma space because of the 'blend' calculation.

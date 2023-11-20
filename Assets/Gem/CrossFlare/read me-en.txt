@@ -1,0 +1,21 @@
+How to use:
+1、Find the CrossFlare_ZM.cs in Gem/CrossFlare/Scripts and drag it to the main camera.(the camera must be assigned main flag)
+2、Debuging the parameters of CrossFlare_ZM to achieve the effect what you want.
+
+Is Open: set false to close the cross flare effect.
+
+Blur Shader: Find the blur.shader in Gem/CrossFlare/shader and assign it to the Blur Shader parameter.
+
+Cutoff Shader: Find the cutoff.shader in Gem/CrossFlare/shader and assign it to the Cutoff Shader parameter.
+
+Blend Shader: Find the blend.shader in Gem/CrossFlare/shader and assign it to the Blend Shader parameter.
+
+Layer Mask: Define which layer object would produce the cross flare.For example, set the gem as water layer, and set this parameter as water layer too.Then only gem can have the cross flare, the background or skybox can not generate the cross flare effect.
+
+Blur Size:the size of the cross flare.(can not be smaller than 0.0625f)
+
+Blur Dir: the direction of the cross flare.
+
+Lum: the luminance of the cross flare.
+
+Lum Cutoff: If the luminance of the pixel is larger than Lum Cutoff, then it would generate the cross flare.

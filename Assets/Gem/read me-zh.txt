@@ -1,0 +1,30 @@
+﻿使用：
+1、新建一个材质，Shader选项选择Unlit/gem。
+2、将Gem/Textures/gem_common/gem_common.cube赋值给RefractCube参数。
+3、将Gem/Textures/hdr_EvnLighting_wb.cube赋值给Evn lighting参数。
+4、将Gem/Textures/hdr_EvnCubemap.cube或者hdr_EvnLighting_wb.cube赋值给Env Texture参数。选用哪个cube看你的需求。你也可以使用你自己的环境贴图。
+5、将Gem/Textures/disperison_0.cube赋值给Dispersion Tex参数。
+6、将材质赋值给钻石模型
+
+如何添加十字辉光效果：
+参看Gem/CrossFlare/read me.txt
+
+钻石材质几点注意：
+1、Gem Color方便用于调节钻石颜色，但是用它调有色钻石并不能出最好的效果。
+如果要更好的带颜色的钻石效果，请在maya或者max中重新渲染一张
+带颜色的gem_cubemap，单纯的使用Gem Color会使其散失对比度。
+
+2、Env Texture是环境cubemap，如果不想要钻石折射周围环境的颜色，可以将其设置为与Env lighting相同的cubemap，这样出来的效果就是纯色的钻石。
+
+3、Reflect Strength:钻石的反射率大概在17%(有可能记错)。这个值不要设的太高。
+
+4、_Emission自发光是用于调节亮度的(注意钻石本身不会发光，这只是方便美术调整效果)。建议设置成纯黑或者很小的值。
+
+
+算法参考自<Phat Lewt: Drawing a Diamond>，其中有做了一些调整和修改。
+
+Gem2.0版本新特性:
+1、去除Env Texture以及Reflect Strength参数。（现在不需要他们了）
+2、支持Reflection Probe（所以去掉了Env Texture）。
+3、抛弃旧的使用cubemap模拟dispersion的方法，采用实时计算dispersion，这会额外增加两次采样和折射计算，但是效果更好。另外优化了原先的某些计算方式，所以并不会变得更慢。
+4、更好的支持gamma space。原先由linear space转换到gamma space时，渲染效果会有较大差异，现在差异更小的，但任然存在。（由于blend的操作，所以gamma校正变得困难。如果使用Unity5.5+，则移动平台也可以支持linear space，但Android需要支持SM3.0以及iOS需要8.0+）

@@ -1,0 +1,14 @@
+﻿用法：
+1、将Blur.cs拖放到MainCamera上面。（注意，脚本中默认用于渲染场景的是MainCamera，如果MainCamera不是主渲染相机将会产生错误）
+2、设置参数
+
+Is Open:是否打开十字辉光的效果
+Blur Shader:在Assets中找到blur.shader，赋值给它
+Cutoff Shader:同上
+Blend Shader:同上
+Layer Mask:定义了哪些层级的物体将会产生十字辉光
+Blur Size:辉光的大小（注意最小不能小于0.0625，否则脚本会强制设置为0.0625）
+Blur Dir:辉光的方向
+Lum:辉光的亮度
+Lum Cutoff:定义了多亮的原始画面将会产生辉光。>1则不产生辉光，0则全部产生辉光。
+
