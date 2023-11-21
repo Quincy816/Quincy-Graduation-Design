@@ -64,14 +64,15 @@ I also completed the code's parameter configuration, enabling the successful run
 
 2. Ninja error, showing not found, used tutorial as follows
 - Link:[https://blog.csdn.net/RRRUAAA/article/details/131171809](https://blog.csdn.net/RRRUAAA/article/details/131171809)
-- ![image](https://github.com/Quincy816/Quincy-Graduation-Design/assets/115622644/36f46dda-aad9-4367-b143-714753c77c81)
+  ![image](https://github.com/Quincy816/Quincy-Graduation-Design/assets/115622644/36f46dda-aad9-4367-b143-714753c77c81)
 
 3. To run the code quickly, data was pre-downloaded to the cache location. This depends on the network speed.
- ![image](https://github.com/Quincy816/Quincy-Graduation-Design/assets/115622644/05362b07-781b-4ef7-af61-2563a44936fc) ![image](https://github.com/Quincy816/Quincy-Graduation-Design/assets/115622644/4e671a91-e234-4095-b6a1-e77423905c41)
+ ![image](https://github.com/Quincy816/Quincy-Graduation-Design/assets/115622644/05362b07-781b-4ef7-af61-2563a44936fc)
+ ![image](https://github.com/Quincy816/Quincy-Graduation-Design/assets/115622644/4e671a91-e234-4095-b6a1-e77423905c41)
 
-4. For the adjustment of hyperparameters, refer to the following tutorial website.
+5. For the adjustment of hyperparameters, refer to the following tutorial website.
 - Link:[https://github.com/NVlabs/stylegan3/blob/main/docs/configs.md](https://github.com/NVlabs/stylegan3/blob/main/docs/configs.md)
-- ![image](https://github.com/Quincy816/Quincy-Graduation-Design/assets/115622644/e677cbe6-0f2b-4805-b77a-8452e1bae57f)
+  ![image](https://github.com/Quincy816/Quincy-Graduation-Design/assets/115622644/e677cbe6-0f2b-4805-b77a-8452e1bae57f)
 
 5. Part of training log
 ![image](https://github.com/Quincy816/Quincy-Graduation-Design/assets/115622644/48fdf190-b35f-4f83-a00c-fecedcecb112)
@@ -81,8 +82,9 @@ Started training and found that the training progress with one GPU was too slow,
 
 ## 9.16-9.20
 - **The project training was still too slow, so I decided to rent a cloud computing server from a network agent. After consulting, I learned that the V100 quad graphics card is the fastest card I could rent at the time, but the rental cost was high. Therefore, I first rented it for 5 days to observe the trial run of the training.**
-According to official documents, the estimated computation time using 8 V100 cards is 5 days.
-![image](https://github.com/Quincy816/Quincy-Graduation-Design/assets/115622644/bdeeee63-e962-48f5-9440-f1d40cf4de53)
+  According to official documents, the estimated computation time using 8 V100 cards is 5 days.
+  ![image](https://github.com/Quincy816/Quincy-Graduation-Design/assets/115622644/bdeeee63-e962-48f5-9440-f1d40cf4de53)
+  
 - **After five days of training, the model's progress reached 10%, but the effect was very poor. I think there was overfitting when training on my dataset using the pre-trained model, possibly because the model is too large and the data volume too small. After weighing the overall training time and cost, I decided to change my approach and avoid the high cost of trial and error in deep learning projects within the limited time. So I started researching new forms of expression.**
 
 ## 9.21-9.30
@@ -98,52 +100,52 @@ Following the tutorial, completed the game's element selection and basic framewo
 Completed the player movement code, the shop code, and the game UI production. Thesis progress 70%.
 ### Main code explanation
 #### Start Screen
-The start screen is controlled by the LoadScene code to jump to the Main game scene.
-![image](https://github.com/Quincy816/Quincy-Graduation-Design/assets/115622644/ae34c36f-a11e-457f-9f2d-139a6850aaf9)
+- The start screen is controlled by the LoadScene code to jump to the Main game scene.
+  ![image](https://github.com/Quincy816/Quincy-Graduation-Design/assets/115622644/ae34c36f-a11e-457f-9f2d-139a6850aaf9)
 
 #### Player Movement
-The player is controlled by an animator and these two codes for playermovement.
-![image](https://github.com/Quincy816/Quincy-Graduation-Design/assets/115622644/eccca9d3-78bb-43dc-8fcb-62480c318d01)
+- The player is controlled by an animator and these two codes for playermovement.
+  ![image](https://github.com/Quincy816/Quincy-Graduation-Design/assets/115622644/eccca9d3-78bb-43dc-8fcb-62480c318d01)
 
 #### Camera Controller
-The camera follows the player's movement and is controlled by these two codes.
-![image](https://github.com/Quincy816/Quincy-Graduation-Design/assets/115622644/1e828a01-1bdd-4772-bb77-5b62619a5aa0)
+- The camera follows the player's movement and is controlled by these two codes.
+  ![image](https://github.com/Quincy816/Quincy-Graduation-Design/assets/115622644/1e828a01-1bdd-4772-bb77-5b62619a5aa0)
 
 #### Enemy Animation
-Enemies animations controlled by the code MY_enemy for movement and attack.
-![image](https://github.com/Quincy816/Quincy-Graduation-Design/assets/115622644/821b7a18-fc85-40f9-a88b-b21a3e42cc6d)
+- Enemies animations controlled by the code MY_enemy for movement and attack.
+  ![image](https://github.com/Quincy816/Quincy-Graduation-Design/assets/115622644/821b7a18-fc85-40f9-a88b-b21a3e42cc6d)
 
 #### Navigation
-the AI's feasible path is rendered, and the blue ground represents the path the AI can take after rendering.
-![image](https://github.com/Quincy816/Quincy-Graduation-Design/assets/115622644/1a946fb4-0644-4422-baab-d097437650ce)
+- the AI's feasible path is rendered, and the blue ground represents the path the AI can take after rendering.
+  ![image](https://github.com/Quincy816/Quincy-Graduation-Design/assets/115622644/1a946fb4-0644-4422-baab-d097437650ce)
 
 #### Enemy Movement
-Enemies use the code MY_enemy combined with NavmeshAgent to automatically patrol and chase the player.
-![image](https://github.com/Quincy816/Quincy-Graduation-Design/assets/115622644/193664bb-5b46-4c12-a25b-14a1bc0deeac)
+- Enemies use the code MY_enemy combined with NavmeshAgent to automatically patrol and chase the player.
+  ![image](https://github.com/Quincy816/Quincy-Graduation-Design/assets/115622644/193664bb-5b46-4c12-a25b-14a1bc0deeac)
 
 
 #### Coins Tag and Gem Tag
-Coins are tagged with 'coin', and when the player collects a coin, it will be detected as a coin.
-![image](https://github.com/Quincy816/Quincy-Graduation-Design/assets/115622644/29109c3c-57f9-4a08-bd40-80004716d040)
+- Coins are tagged with 'coin', and when the player collects a coin, it will be detected as a coin.
+  ![image](https://github.com/Quincy816/Quincy-Graduation-Design/assets/115622644/29109c3c-57f9-4a08-bd40-80004716d040)
 
-Diamonds are tagged with 'gem', and when the player collect a diamond, it will be detected as a diamond.
-![image](https://github.com/Quincy816/Quincy-Graduation-Design/assets/115622644/fe4cee3a-d262-496f-88bc-4f6947fbea02)
+- Diamonds are tagged with 'gem', and when the player collect a diamond, it will be detected as a diamond.
+  ![image](https://github.com/Quincy816/Quincy-Graduation-Design/assets/115622644/fe4cee3a-d262-496f-88bc-4f6947fbea02)
 
 #### Sound Effects
-This part of the script is for detecting whether the player touches a coin or a diamond, then adds points and plays sound effects.
-![image](https://github.com/Quincy816/Quincy-Graduation-Design/assets/115622644/00eaa007-490b-4308-a58f-a52fb81fa9ca)
+- This part of the script is for detecting whether the player touches a coin or a diamond, then adds points and plays sound effects.
+  ![image](https://github.com/Quincy816/Quincy-Graduation-Design/assets/115622644/00eaa007-490b-4308-a58f-a52fb81fa9ca)
 
 #### Shop Script
-The shop purchase is controlled by this script.
-![image](https://github.com/Quincy816/Quincy-Graduation-Design/assets/115622644/256e463b-6a73-44b8-a944-d337a83b6990)
+- The shop purchase is controlled by this script.
+  ![image](https://github.com/Quincy816/Quincy-Graduation-Design/assets/115622644/256e463b-6a73-44b8-a944-d337a83b6990)
 
 #### Shopping Node
-The shopping node is controlled by this script for page turning.
-![image](https://github.com/Quincy816/Quincy-Graduation-Design/assets/115622644/534da14a-c55b-49bf-92fe-0be4a491ddae)
+- The shopping node is controlled by this script for page turning.
+  ![image](https://github.com/Quincy816/Quincy-Graduation-Design/assets/115622644/534da14a-c55b-49bf-92fe-0be4a491ddae)
 
 #### End Screen
-The end screen typewriter effect, where words appear one by one, is controlled by this.
-![image](https://github.com/Quincy816/Quincy-Graduation-Design/assets/115622644/446a3434-f0d1-4fcb-8f1e-873ba33a11a1)
+- The end screen typewriter effect, where words appear one by one, is controlled by this.
+  ![image](https://github.com/Quincy816/Quincy-Graduation-Design/assets/115622644/446a3434-f0d1-4fcb-8f1e-873ba33a11a1)
 
 
 ## 11.10
@@ -186,23 +188,26 @@ Technically, we used Unity as the game development software platform, which offe
 
 ### 7. Game Storyboard
 #### 7.1 Start main menu
-<img width="483" alt="image" src="https://github.com/Quincy816/Quincy-Graduation-Design/assets/115622644/ffb74934-fb3d-4d44-8415-64d18156074a">
-<img width="478" alt="image" src="https://github.com/Quincy816/Quincy-Graduation-Design/assets/115622644/eefd8c17-db75-4ed8-95bc-6f58a206f99d">
+- <img width="483" alt="image" src="https://github.com/Quincy816/Quincy-Graduation-Design/assets/115622644/ffb74934-fb3d-4d44-8415-64d18156074a">
+- <img width="478" alt="image" src="https://github.com/Quincy816/Quincy-Graduation-Design/assets/115622644/eefd8c17-db75-4ed8-95bc-6f58a206f99d">
 
 #### 7.2 Character Movement
-Top right mini-map shows location Spacebar to jump, c key to crouch and hide footsteps
-<img width="557" alt="image" src="https://github.com/Quincy816/Quincy-Graduation-Design/assets/115622644/c17ac5a7-bd6e-4d9e-9311-00e18d1cb711"><img width="558" alt="image" src="https://github.com/Quincy816/Quincy-Graduation-Design/assets/115622644/2b9eee6d-bff2-4034-9f44-753887d4c52b">
+- Top right mini-map shows location Spacebar to jump, c key to crouch and hide footsteps
+  <img width="557" alt="image" src="https://github.com/Quincy816/Quincy-Graduation-Design/assets/115622644/c17ac5a7-bd6e-4d9e-9311-00e18d1cb711">
+  <img width="558" alt="image" src="https://github.com/Quincy816/Quincy-Graduation-Design/assets/115622644/2b9eee6d-bff2-4034-9f44-753887d4c52b">
 
-Movement combined with spacebar or c key for new movement methods
-<img width="561" alt="image" src="https://github.com/Quincy816/Quincy-Graduation-Design/assets/115622644/83c6204c-c91c-40e8-a953-6349d35d362a">
+- Movement combined with spacebar or c key for new movement methods
+  <img width="561" alt="image" src="https://github.com/Quincy816/Quincy-Graduation-Design/assets/115622644/83c6204c-c91c-40e8-a953-6349d35d362a">
 
 #### 7.3 Exchange Shop
-Every two items unlocked unlocks text cutscenes
-<img width="554" alt="image" src="https://github.com/Quincy816/Quincy-Graduation-Design/assets/115622644/faf2e617-9788-44b5-ada3-872a784ec3b6"><img width="557" alt="image" src="https://github.com/Quincy816/Quincy-Graduation-Design/assets/115622644/872eb1a8-fddd-47b5-97ef-95bc406b8790">
+- Every two items unlocked unlocks text cutscenes
+  <img width="554" alt="image" src="https://github.com/Quincy816/Quincy-Graduation-Design/assets/115622644/faf2e617-9788-44b5-ada3-872a784ec3b6">
+  <img width="557" alt="image" src="https://github.com/Quincy816/Quincy-Graduation-Design/assets/115622644/872eb1a8-fddd-47b5-97ef-95bc406b8790">
 
 #### 7.4 Enemy Patrol
-Within patrol range, players will be chased by animals
-<img width="560" alt="image" src="https://github.com/Quincy816/Quincy-Graduation-Design/assets/115622644/b6223d57-2eee-4796-a08b-2c115ff9ad34"><img width="554" alt="image" src="https://github.com/Quincy816/Quincy-Graduation-Design/assets/115622644/661c29b6-4b80-4dff-a4b6-961e37e9888e">
+- Within patrol range, players will be chased by animals
+  <img width="560" alt="image" src="https://github.com/Quincy816/Quincy-Graduation-Design/assets/115622644/b6223d57-2eee-4796-a08b-2c115ff9ad34">
+  <img width="554" alt="image" src="https://github.com/Quincy816/Quincy-Graduation-Design/assets/115622644/661c29b6-4b80-4dff-a4b6-961e37e9888e">
 
 #### 7.5 Ending Scene
 - Ending One
@@ -227,25 +232,25 @@ Deeply reflects and satirizes the pursuit of high-end goods in modern society an
 
 
 ## II. Deep Learning Model Training Project Summary
-### Algorithm Choice
+### 1. Algorithm Choice
 StyleGan3
 
-### Related Tutorial
+### 2. Related Tutorial
 [https://www.youtube.com/watch?v=R546LYsQk5M](https://www.youtube.com/watch?v=R546LYsQk5M)
 
-### Official Code Repository
+### 3. Official Code Repository
 [https://github.com/NVlabs/stylegan3](https://github.com/NVlabs/stylegan3)
 
-### Dataset Link
+### 4. Dataset Link
 [https://drive.google.com/file/d/1A7CpJQp6bW_MnOoyV1mkiQztncAm-Re5/view?usp=drive_link](https://drive.google.com/file/d/1A7CpJQp6bW_MnOoyV1mkiQztncAm-Re5/view?usp=drive_link)
 
 I created a dataset of 1000 classic lace pattern images, using segmentation and rotation data augmentation techniques to increase the dataset size. Project Goal: To generate similar clothing style types on user-uploaded clothing images based on current fashion trends, helping fashion industry designers and users interested in clothing matching predict the fashion trends of classic brands.
 
-### Evaluation Method
+### 5. Evaluation Method
 Ability to generate new lace pattern images, using accuracy model.
 
-### Project Outcome
+### 6. Project Outcome
 Due to the lack of high-performance computing, the difficulty of retraining the Stylegan3 model on my dataset was too high. The training results did not meet the requirements due to the high difference between training clothing patterns using the official pre-trained model. Therefore, it sparked my need for high-performance computing in the field of machine learning, linking to the conflict between high consumer desires and purchasing power in society.
 
-### Project result video link
+### 7. Project result video link
 [https://youtu.be/GRL2zy0W6VQ](https://youtu.be/GRL2zy0W6VQ)
