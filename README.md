@@ -1,4 +1,4 @@
-# Quincy's Graduation Design
+# Quincy's Graduation Design Log
 ## Author name 
 Qian Xu
 ## Student ID
