@@ -80,13 +80,13 @@ I also completed the code's parameter configuration, enabling the successful run
 Started training and found that the training progress with one GPU was too slow, with a complete cycle taking 133 days. This was too high a cost for trial and error for this project, so I decided to change the training mode and train using the pre-trained models provided by the official Stylegan3.
 
 ## 9.16-9.20
-- The project training was still too slow, so I decided to rent a cloud computing server from a network agent. After consulting, I learned that the V100 quad graphics card is the fastest card I could rent at the time, but the rental cost was high. Therefore, I first rented it for 5 days to observe the trial run of the training.
+- **The project training was still too slow, so I decided to rent a cloud computing server from a network agent. After consulting, I learned that the V100 quad graphics card is the fastest card I could rent at the time, but the rental cost was high. Therefore, I first rented it for 5 days to observe the trial run of the training.**
 According to official documents, the estimated computation time using 8 V100 cards is 5 days.
 ![image](https://github.com/Quincy816/Quincy-Graduation-Design/assets/115622644/bdeeee63-e962-48f5-9440-f1d40cf4de53)
-- After five days of training, the model's progress reached 10%, but the effect was very poor. I think there was overfitting when training on my dataset using the pre-trained model, possibly because the model is too large and the data volume too small. After weighing the overall training time and cost, I decided to change my approach and avoid the high cost of trial and error in deep learning projects within the limited time. So I started researching new forms of expression.
+- **After five days of training, the model's progress reached 10%, but the effect was very poor. I think there was overfitting when training on my dataset using the pre-trained model, possibly because the model is too large and the data volume too small. After weighing the overall training time and cost, I decided to change my approach and avoid the high cost of trial and error in deep learning projects within the limited time. So I started researching new forms of expression.**
 
 ## 9.21-9.30
-The new project plan was determined to be a 3D adventure Unity game. In this case, I could use the previously discussed plan with the teacher about the second theme and make the game's theme reuse the content of the previous literature search, improving efficiency.
+**The new project plan was determined to be a 3D adventure Unity game. In this case, I could use the previously discussed plan with the teacher about the second theme and make the game's theme reuse the content of the previous literature search, improving efficiency.**
 
 ## 10.1-10.15
 Wrote the game outline and storyboard, determined the basic logic. At the same time, started writing the thesis.
@@ -154,3 +154,98 @@ Completed all game construction and recorded a video, produced related code expl
 
 ## 11.16-11.24
 Wrapping up the project and thesis.
+
+
+# Work Summary
+## I. Unity Game Design Project Summary
+### 1. Game Name
+Treasure Journey
+
+### 2. Video Link
+[link]()
+
+### 3. Project Code
+[https://drive.google.com/drive/folders/1cJL97QdwZgfVMEeXZYG6PGwgoP4fYRwv?usp=drive_link](https://drive.google.com/drive/folders/1cJL97QdwZgfVMEeXZYG6PGwgoP4fYRwv?usp=drive_link)
+
+### 4. Game Type
+Third-person 3D game, a combination of action-adventure, survival, and collection games. Such games typically offer a rich exploration experience and challenging survival elements, appealing to players who like diverse gaming experiences.
+
+### 5. Game Play
+#### 5.1 Controls
+- Control character movement with arrow keys, spacebar to jump, c key to crouch.
+- Mouse movement controls camera angle changes.
+- Mouse click to skip text cutscenes.
+
+#### 5.2 Ending Trigger Conditions
+- Winning condition: Unlock all items and end with health not at zero.
+- Losing condition: Health <= 0.
+
+
+### 6. Experience Design
+Technically, we used Unity as the game development software platform, which offers powerful tools and features to create high-quality gaming experiences. During development, I first created the game scene, characters, and basic colliders based on 3D gaming fundamentals. Then controlled the camera position to follow the player and the camera angle to follow the mouse coordinates. In the game scene, I set some patrol points and added enemy characters. By writing code, we made the enemies patrol fixed routes and chase and attack the player within a certain range. To increase the game's playability and strategy, we designed two different types of loot, diamonds and gold coins, where 1 diamond = 10 gold coins, to speed up the collection process and prevent boredom while collecting gold coins. Additionally, we added successful unlock and game completion cutscenes. Players need to unlock all items to restore the cutscene and meet the completion criteria. Through these technical choices and designs, we strive to create a rich, challenging, and engaging gaming experience for players.
+
+### 7. Game Storyboard
+#### 7.1 Start main menu
+<img width="483" alt="image" src="https://github.com/Quincy816/Quincy-Graduation-Design/assets/115622644/ffb74934-fb3d-4d44-8415-64d18156074a">
+<img width="478" alt="image" src="https://github.com/Quincy816/Quincy-Graduation-Design/assets/115622644/eefd8c17-db75-4ed8-95bc-6f58a206f99d">
+
+#### 7.2 Character Movement
+Top right mini-map shows location Spacebar to jump, c key to crouch and hide footsteps
+<img width="557" alt="image" src="https://github.com/Quincy816/Quincy-Graduation-Design/assets/115622644/c17ac5a7-bd6e-4d9e-9311-00e18d1cb711"><img width="558" alt="image" src="https://github.com/Quincy816/Quincy-Graduation-Design/assets/115622644/2b9eee6d-bff2-4034-9f44-753887d4c52b">
+
+Movement combined with spacebar or c key for new movement methods
+<img width="561" alt="image" src="https://github.com/Quincy816/Quincy-Graduation-Design/assets/115622644/83c6204c-c91c-40e8-a953-6349d35d362a">
+
+#### 7.3 Exchange Shop
+Every two items unlocked unlocks text cutscenes
+<img width="554" alt="image" src="https://github.com/Quincy816/Quincy-Graduation-Design/assets/115622644/faf2e617-9788-44b5-ada3-872a784ec3b6"><img width="557" alt="image" src="https://github.com/Quincy816/Quincy-Graduation-Design/assets/115622644/872eb1a8-fddd-47b5-97ef-95bc406b8790">
+
+#### 7.4 Enemy Patrol
+Within patrol range, players will be chased by animals
+<img width="560" alt="image" src="https://github.com/Quincy816/Quincy-Graduation-Design/assets/115622644/b6223d57-2eee-4796-a08b-2c115ff9ad34"><img width="554" alt="image" src="https://github.com/Quincy816/Quincy-Graduation-Design/assets/115622644/661c29b6-4b80-4dff-a4b6-961e37e9888e">
+
+#### 7.5 Ending Scene
+- Ending One
+  Die when attacked and health drops to 0
+  <img width="554" alt="image" src="https://github.com/Quincy816/Quincy-Graduation-Design/assets/115622644/061ece29-0d64-4b4b-a3b1-0240f5382da5">
+
+- Ending Two
+  Unlock all items, then Next jumps to the end screen
+  <img width="555" alt="image" src="https://github.com/Quincy816/Quincy-Graduation-Design/assets/115622644/c1004ea5-eff8-483e-a06e-bd7b17fd0ae6">
+  <img width="554" alt="image" src="https://github.com/Quincy816/Quincy-Graduation-Design/assets/115622644/92675fe6-a0f0-4203-976e-caa93b9df586">
+
+
+### 8. Game Purpose
+Deeply reflects and satirizes the pursuit of high-end goods in modern society and its social and psychological impacts. Players in the game play as an adventurer, aiming to collect gold coins to buy luxury goods. The game environment is set in a virtual world full of natural disasters
+
+### 9. Work Description
+- Secondary data research
+- Qualitative and quantitative analysis
+- Theme planning, character design
+- Game code production
+- Game trial feedback
+
+
+## II. Deep Learning Model Training Project Summary
+### Algorithm Choice
+StyleGan3
+
+### Related Tutorial
+[https://www.youtube.com/watch?v=R546LYsQk5M](https://www.youtube.com/watch?v=R546LYsQk5M)
+
+### Official Code Repository
+[https://github.com/NVlabs/stylegan3](https://github.com/NVlabs/stylegan3)
+
+### Dataset Link
+[https://drive.google.com/file/d/1A7CpJQp6bW_MnOoyV1mkiQztncAm-Re5/view?usp=drive_link](https://drive.google.com/file/d/1A7CpJQp6bW_MnOoyV1mkiQztncAm-Re5/view?usp=drive_link)
+
+I created a dataset of 1000 classic lace pattern images, using segmentation and rotation data augmentation techniques to increase the dataset size. Project Goal: To generate similar clothing style types on user-uploaded clothing images based on current fashion trends, helping fashion industry designers and users interested in clothing matching predict the fashion trends of classic brands.
+
+### Evaluation Method
+Ability to generate new lace pattern images, using accuracy model.
+
+### Project Outcome
+Due to the lack of high-performance computing, the difficulty of retraining the Stylegan3 model on my dataset was too high. The training results did not meet the requirements due to the high difference between training clothing patterns using the official pre-trained model. Therefore, it sparked my need for high-performance computing in the field of machine learning, linking to the conflict between high consumer desires and purchasing power in society.
+
+### Project result video link
+[https://youtu.be/GRL2zy0W6VQ](https://youtu.be/GRL2zy0W6VQ)
