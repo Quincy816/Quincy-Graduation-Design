@@ -164,7 +164,7 @@ Wrapping up the project and thesis.
 Treasure Journey
 
 ### 2. Video Link
-[link]()
+[https://youtu.be/_UrEk0nExzo](https://youtu.be/_UrEk0nExzo)
 
 ### 3. Project Code
 [https://drive.google.com/drive/folders/1cJL97QdwZgfVMEeXZYG6PGwgoP4fYRwv?usp=drive_link](https://drive.google.com/drive/folders/1cJL97QdwZgfVMEeXZYG6PGwgoP4fYRwv?usp=drive_link)
